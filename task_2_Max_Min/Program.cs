@@ -13,15 +13,11 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 
 if (number1>number2)
 {
-    Console.Write("Большее из двух чисел = ");
-    Console.WriteLine(number1);
-    Console.Write("Меньшее из двух чисел = ");   
-    Console.WriteLine(number2); 
-}
+    Console.WriteLine($"Большее из двух чисел = {number1}");
+    Console.Write($"Меньшее из двух чисел = {number2}");   
+   }
 else 
 {
-    Console.Write("Большее из двух чисел = ");
-    Console.WriteLine(number2);
-    Console.Write("Меньшее из двух чисел = ");   
-    Console.WriteLine(number1); 
+    Console.WriteLine($"Большее из двух чисел = {number2}");
+    Console.Write($"Меньшее из двух чисел = {number1}"); 
 }
