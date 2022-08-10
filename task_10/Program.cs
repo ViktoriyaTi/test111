@@ -7,6 +7,15 @@
 
 Console.WriteLine("Введите трехзначное число: ");
 int userNumber = Convert.ToInt32(Console.ReadLine());
-int numberdiv = userNumber/10;
-int finishNumber = numberdiv % 10;
+int numberdiv;
+int finishNumber;
+if (userNumber > 999 || userNumber < 100) 
+{
+  Console.WriteLine("Вы ввели не трехзначное число!");  
+}
+else
+{
+numberdiv = userNumber/10;
+finishNumber = numberdiv % 10;
 Console.WriteLine($"Вторая цифра числа: {finishNumber}");
+}
