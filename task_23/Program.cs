@@ -8,7 +8,5 @@ int userNumber = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Таблица кубов чисел:");
 for (int index = 1; index <= userNumber; index++)
 {
-
     Console.Write($"  {index * index * index}");
-
 }
