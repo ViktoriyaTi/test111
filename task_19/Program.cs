@@ -6,18 +6,18 @@
 */
 Console.WriteLine("Введите число: ");
 int userNumber = Convert.ToInt32(Console.ReadLine());
-int a = 0;
-int b = 0;
-int userNumberPR = userNumber;
-while (userNumberPR > 0)
+int remainder = 0;
+int calculations = 0;
+int userNumber2 = userNumber;
+while (userNumber2 > 0)
 {
-    a = userNumberPR % 10;
-    b = b * 10 + a;
-    userNumberPR = userNumberPR / 10;
+    remainder = userNumber2 % 10;
+    calculations = calculations * 10 + remainder;
+    userNumber2 = userNumber2 / 10;
 }
-if (userNumber == b)
+if (userNumber == calculations)
 {
-    Console.WriteLine($" Является палиндромом");
+    Console.WriteLine($"Введенное число является палиндромом");
 }
 else
-    Console.WriteLine($" Не является палиндромом");
+    Console.WriteLine($"Введенное число не является палиндромом");
