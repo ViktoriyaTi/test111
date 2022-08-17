@@ -7,13 +7,13 @@
 Console.WriteLine("Введите число: ");
 int userNumber = Convert.ToInt32(Console.ReadLine());
 
-int FindSumNumbers(int numberA)
+int FindSumNumbers(int number)
 {
     int sum = 0;
     int result = 0;
-    while (numberA > 0)
+    while (number > 0)
     {
-        numberA = Math.DivRem(numberA, 10, out result);
+        number = Math.DivRem(number, 10, out result);
         sum = sum + result;
     }
     return sum;
