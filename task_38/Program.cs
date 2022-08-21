@@ -7,11 +7,7 @@ double[] array = new double[10];
 FillArray(array);
 PrintArray(array);
 Console.WriteLine();
-//Console.WriteLine(MaxNumber(array));
-//Console.WriteLine(MinNumber(array));
-Console.ForegroundColor = ConsoleColor.Blue;
 Console.WriteLine($"Разность между max {MaxNumber(array)} и min {MinNumber(array)} элементами = {MaxNumber(array)- MinNumber(array)}");
-Console.ResetColor();
 
 void FillArray(double[] collection)
 {
