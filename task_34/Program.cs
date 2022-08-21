@@ -3,7 +3,8 @@
 Напишите программу, которая покажет количество чётных чисел в массиве.
 [345, 897, 568, 234] -> 2
 */
-int[] array = new int[10];
+int[] array = new int[4];
+
 FillArray(array);
 PrintArray(array);
 Console.WriteLine();
