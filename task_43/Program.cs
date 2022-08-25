@@ -14,12 +14,13 @@ Console.WriteLine("Введите значение k2: ");
 double k2 = Convert.ToInt32(Console.ReadLine());
 
 
-if (k1 == 0 || k2 == 0 || (k1-k2) == 0)
+if (k1 == 0 || k2 == 0 || (k1 - k2) == 0)
 {
     Console.WriteLine("Ошибка ! Измените значение k1 или k2");
 }
 else
-{double X = Math.Round((b2 - b1)/(k1 - k2), 2);
-double Y = Math.Round(k1 * X + b1, 2);
-Console.Write($"Точка пересечения двух прямых Х = {X}, У ={Y}");
+{
+    double X = Math.Round((b2 - b1) / (k1 - k2), 2);
+    double Y = Math.Round(k1 * X + b1, 2);
+    Console.Write($"Точка пересечения двух прямых Х = {X}, У ={Y}");
 }
