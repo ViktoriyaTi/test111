@@ -7,29 +7,14 @@
 17 -> такого числа в массиве нет
 */
 int[,] array = new int[3, 4];
+
 FillArray(array);
 PrintArray(array);
-
 Console.WriteLine("Введите номер строки: ");
 int k = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите номер столбца: ");
 int l = Convert.ToInt32(Console.ReadLine());
 Position(array, k, l);
-
-void Position(int[,] array, int rows, int columns)
-{
-    int i = 0;
-    int j = 0;
-    if (i <= rows &&
-    rows <= array.GetLength(0) &&
-    j <= columns &&
-    columns <= array.GetLength(1))
-    {
-        Console.Write($"Введенная позиция {rows},{columns} содержит значение {array[rows, columns]}");
-    }
-    else { Console.WriteLine($"Такой позиции {rows},{columns} в массиве нет"); }
-}
-
 
 void FillArray(int[,] array)
 {
@@ -55,3 +40,16 @@ void PrintArray(int[,] array)
     }
 }
 
+void Position(int[,] array, int rows, int columns)
+{
+    int i = 0;
+    int j = 0;
+    if (i <= rows &&
+    rows <= array.GetLength(0) &&
+    j <= columns &&
+    columns <= array.GetLength(1))
+    {
+        Console.Write($"Введенная позиция {rows},{columns} содержит значение {array[rows, columns]}");
+    }
+    else { Console.WriteLine($"Такой позиции {rows},{columns} в массиве нет"); }
+}
