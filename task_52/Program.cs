@@ -44,7 +44,6 @@ void PrintArray(int[,] array)
 
 void ArithmeticMeanColumns(int[,] array)
 {
-
     for (int j = 0; j < array.GetLength(1); j++)
     {
         double summColumn = 0;
