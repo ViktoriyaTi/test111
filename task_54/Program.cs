@@ -56,9 +56,9 @@ int[,] ChangeArray(int[,] array)
             {
                 if (array[i, k] < array[i, k + 1])
                 {
-                    int maximum = array[i, k + 1];
+                    int temporaryValue = array[i, k + 1];
                     array[i, k + 1] = array[i, k];
-                    array[i, k] = maximum;
+                    array[i, k] = temporaryValue;
                 }
             }
         }
